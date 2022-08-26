@@ -14,7 +14,7 @@ import com.pravera.flutter_activity_recognition.errors.ErrorCodes
 class ActivityRecognitionManager: SharedPreferences.OnSharedPreferenceChangeListener {
 	companion object {
 		const val TAG = "ActivityRecognition"
-		const val UPDATES_INTERVAL_MILLIS = 1000L
+		const val UPDATES_INTERVAL_MILLIS = 500L
 	}
 
 	private var successCallback: (() -> Unit)? = null
